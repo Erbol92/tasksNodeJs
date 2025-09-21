@@ -1,0 +1,46 @@
+body {
+    color: #999;
+}
+
+.widget {
+    background-color: silver;
+    width: 300px;
+    color: black;
+    padding: 30px 10px 30px 10px;
+}
+
+.widget-inner {
+    background-image: url('../img/widget/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+
+.task {
+    border: solid 1px silver;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 50%; 
+    position: relative;
+    margin-right: 10px; 
+}
+
+input:checked + .checkmark {
+    background-image: url('../img/widget/v.png');
+}
